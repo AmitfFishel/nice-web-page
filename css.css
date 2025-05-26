@@ -1,0 +1,68 @@
+div.hidden {
+    display: none;
+}
+a.valid { 
+    display: block;   
+}
+a.malicious {
+    display: block;
+}
+div.button {
+    width: 150px; 
+    height: 40px; 
+    background-color: yellow; 
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+}
+
+div.div-grid {
+    width: 300px;
+}
+/*the text inside <p> inside #lime_paragraph will color green*/
+#lime_paragraph > .lime_paragraph > p {
+    color: #00ff00; /* Lime green color */
+  }
+
+/*the background of <p> with the val blue inside the #blue_background will color blue*/
+ #blue_background p[blue] {
+    background-color: #0000ff; /* Blue background */
+  }
+
+  /* for the first <p> inside .redcontent Change the text color to red and only for them */
+  .redcontent > p:first-child {
+    color: #ff0000; /* Red color */
+  }
+
+  /* Add the dynamic text is requred after <p> with class text_after */
+  p.text_after::after {
+    content:"Added this text";
+    color: inherit;
+    font-style: inherit;
+  }
+
+  .div-grid {
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    gap: 5px;
+  }
+
+  .div-grid > div:nth-of-type(1) {
+    background-color: #0000ff;
+  }
+
+  .div-grid > div:nth-of-type(2) {
+    background-color: rebeccapurple;
+  }
+
+  .div-grid > div:nth-of-type(3) {
+    background-color: greenyellow;
+  }
+
+  .div-grid > div:nth-of-type(4) {
+    background-color: pink;
+  }
+
+  .div-grid > div:nth-of-type(5) {
+    background-color: white;
+  }
